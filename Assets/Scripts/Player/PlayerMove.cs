@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -9,11 +8,19 @@ public class PlayerMove : MonoBehaviour
 
     private float _dragSensitivity = 0.01f;
     private bool _isDragging = false;
+    private bool _isFlipping = false;
+
+    private float _targetAngle;
+    private float _rotateSpeed = 300f;
+    private bool _isRotating = false;
 
     private void Update()
     {
         HandleTouchInput();
-        MoveDirectionPlayer();
+        MoveForward();
+
+        if (_isRotating)
+            SmoothRotate();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +33,7 @@ public class PlayerMove : MonoBehaviour
 
     private void HandleTouchInput()
     {
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 && !_isFlipping)
         {
             Touch touch = Input.GetTouch(0);
 
@@ -40,13 +47,12 @@ public class PlayerMove : MonoBehaviour
                     if (_isDragging)
                     {
                         Vector2 touchDelta = touch.deltaPosition;
-                        float moveX = touchDelta.x * _dragSensitivity;
+                        float moveAmount = touchDelta.x * _dragSensitivity;
 
-                        Vector3 newPosition = transform.position;
+                        Vector3 move = transform.right * moveAmount;
+                        Vector3 targetPosition = transform.position + move;
 
-                        newPosition.x += moveX;
-
-                        transform.position = newPosition;
+                        transform.position = targetPosition;
                     }
                     break;
 
@@ -58,18 +64,49 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void MoveDirectionPlayer()
+
+
+    private void MoveForward()
     {
         transform.Translate(Vector3.forward * _forwardSpeed * Time.deltaTime);
     }
 
     public void RotatePlayer(float angle)
     {
-        if (transform.localEulerAngles.y < angle)
-        {
-            transform.Rotate(0f, angle * Time.deltaTime, 0f);
-            print(transform.localEulerAngles.y);
-        }
+        if (_isRotating) return;
 
+        _targetAngle = angle;
+        _isRotating = true;
+        _isFlipping = true;
+
+        if (Mathf.Approximately(angle % 360f, 0f))
+        {
+            _boundaryLeft = -3f;
+            _boundaryRight = 3f;
+        }
+        else if (Mathf.Approximately(angle % 360f, 90f))
+        {
+            _boundaryLeft = -3f;
+            _boundaryRight = 3f;
+        }
+    }
+
+    private void SmoothRotate()
+    {
+        float currentY = transform.localEulerAngles.y;
+        float newY = Mathf.MoveTowardsAngle(currentY, _targetAngle, _rotateSpeed * Time.deltaTime);
+        transform.localEulerAngles = new Vector3(0f, newY, 0f);
+
+        if (Mathf.Approximately(Mathf.DeltaAngle(currentY, _targetAngle), 0f))
+        {
+            transform.localEulerAngles = new Vector3(0f, _targetAngle, 0f);
+            _isRotating = false;
+            _isFlipping = false;
+        }
+    }
+
+    public void EndRotatePlayer()
+    {
+        _isFlipping = false;
     }
 }

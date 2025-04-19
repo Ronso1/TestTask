@@ -12,4 +12,12 @@ public class TriggerToFlip : MonoBehaviour
             _player.RotatePlayer(_angleToFlip);
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<PlayerMove>())
+        {
+            _player.EndRotatePlayer();
+        }
+    }
 }
