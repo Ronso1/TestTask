@@ -9,6 +9,7 @@ public class TriggerToDoors : MonoBehaviour
     [SerializeField] private AudioClip _audioClipWin;
     [SerializeField] private AudioClip _audioClipLose;
     [SerializeField] private int _scoreNeeded;
+    [SerializeField] private bool _finalDoor;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +17,15 @@ public class TriggerToDoors : MonoBehaviour
 
         if (_gameManager.PlayerScore >= _scoreNeeded)
         {
+            if (_finalDoor)
+            {
+                if (_playerMove.enabled is false) return;
+
+                _gameManager.GameComplete();
+                _playerMove.enabled = false;
+                return;
+            }
+
             _doorsAnimator.enabled = true;
             _audioSource.PlayOneShot(_audioClipWin);
         }
@@ -23,6 +33,7 @@ public class TriggerToDoors : MonoBehaviour
         {
             _audioSource.PlayOneShot(_audioClipLose);
             _playerMove.enabled = false;
+            _gameManager.GameFailed();
         }
     }
 }

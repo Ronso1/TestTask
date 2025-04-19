@@ -1,16 +1,19 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private List<GameObject> _playerState;
     [SerializeField] private GameStart _gameStart;
     [SerializeField] private Animator _playerAnimator;
 
     private int _playerScore = 40;
+    private int _currentState = 0;
 
     public int PlayerScore => _playerScore;
 
     private void Update()
-    { 
+    {
         CheckPlayerState();
     }
 
@@ -22,28 +25,41 @@ public class GameManager : MonoBehaviour
         if (_gameStart.GameStarted)
         {
             if (_playerAnimator.GetBool("IsStarted") is false) _playerAnimator.SetBool("IsStarted", true);
-            print(_playerScore);
-            if (_playerScore >= firstLevel)
+
+            if (_playerScore >= firstLevel && _currentState == 0)
             {
                 _playerAnimator.SetBool("IsLvlUpFirst", true);
+                ChangePlayerState(true);
             }
 
-            if (_playerScore >= secondLevel)
+            if (_playerScore >= secondLevel && _currentState == 1)
             {
                 _playerAnimator.SetBool("IsLvlUpSecond", true);
+                ChangePlayerState(true);
             }
 
-            if (_playerScore < secondLevel)
+            if (_playerScore < secondLevel && _currentState == 2)              
             {
                 _playerAnimator.SetBool("IsLvlUpSecond", false);
+                ChangePlayerState(false);
             }
 
-            if (_playerScore < firstLevel)
+            if (_playerScore < firstLevel && _currentState == 1)
             {
                 _playerAnimator.SetBool("IsLvlUpFirst", false);
+                ChangePlayerState(false);
             }
         }
 
+    }
+
+    private void ChangePlayerState(bool lvlUp)
+    {
+        _playerState[_currentState].SetActive(false);
+
+        _currentState = lvlUp ? ++_currentState : --_currentState;
+        print(_currentState);
+        _playerState[_currentState].SetActive(true);
     }
 
     public void IncreaseScore(int pointValue)
@@ -59,6 +75,16 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-       _playerScore -= pointValue;
+        _playerScore -= pointValue;
+    }
+
+    public void GameComplete()
+    {
+        _playerAnimator.SetTrigger("Win");
+    }
+
+    public void GameFailed()
+    {
+        _playerAnimator.SetTrigger("Fail");
     }
 }
