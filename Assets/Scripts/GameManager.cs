@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore(int pointValue)
     {
         _playerScore += pointValue;
-        print(_playerScore);
     }
 
     public void DecreaseScore(int pointValue)
@@ -21,6 +20,5 @@ public class GameManager : MonoBehaviour
         }
 
        _playerScore -= pointValue;
-        print(_playerScore);
     }
 }

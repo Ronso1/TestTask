@@ -62,7 +62,6 @@ public class PlayerMove : MonoBehaviour
                     }
                     break;
 
-                case TouchPhase.Ended:
                 case TouchPhase.Canceled:
                     _isDragging = false;
                     break;
