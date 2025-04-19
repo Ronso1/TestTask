@@ -1,60 +1,75 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private float _forwardSpeed = 5f;
-    [SerializeField] private float _sidewaysSpeed = 10f;
     [SerializeField] private float _boundaryLeft = -3f;
     [SerializeField] private float _boundaryRight = 3f;
 
-    private float _screenWidth;
-    private float _inputX;
-
-    private void Awake()
-    {
-        _screenWidth = Screen.width;
-    }
+    private float _dragSensitivity = 0.01f;
+    private bool _isDragging = false;
 
     private void Update()
     {
         HandleTouchInput();
-        MoveSideways();
         MoveDirectionPlayer();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<ItemInteractLogic>())
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 
     private void HandleTouchInput()
     {
-        _inputX = 0f;
-
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
+            switch (touch.phase)
             {
-                float halfScreen = _screenWidth / 2f;
+                case TouchPhase.Began:
+                    _isDragging = true;
+                    break;
 
-                if (touch.position.x < halfScreen)
-                    _inputX = -1f;
-                else
-                    _inputX = 1f;
+                case TouchPhase.Moved:
+                    if (_isDragging)
+                    {
+                        Vector2 touchDelta = touch.deltaPosition;
+                        float moveX = touchDelta.x * _dragSensitivity;
+
+                        Vector3 newPosition = transform.position;
+
+                        newPosition.x += moveX;
+
+                        transform.position = newPosition;
+                    }
+                    break;
+
+                case TouchPhase.Ended:
+                case TouchPhase.Canceled:
+                    _isDragging = false;
+                    break;
             }
         }
-    }
-
-    private void MoveSideways()
-    {
-        Vector3 playerPosition = transform.position;
-        playerPosition.x += _inputX * _sidewaysSpeed * Time.deltaTime;
-
-        playerPosition.x = Mathf.Clamp(playerPosition.x, _boundaryLeft, _boundaryRight);
-
-        transform.position = playerPosition;
     }
 
     private void MoveDirectionPlayer()
     {
         transform.Translate(Vector3.forward * _forwardSpeed * Time.deltaTime);
+    }
+
+    public void RotatePlayer(float angle)
+    {
+        if (transform.localEulerAngles.y < angle)
+        {
+            transform.Rotate(0f, angle * Time.deltaTime, 0f);
+            print(transform.localEulerAngles.y);
+        }
 
     }
 }
