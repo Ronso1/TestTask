@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> _playerState;
     [SerializeField] private GameStart _gameStart;
     [SerializeField] private Animator _playerAnimator;
+    [SerializeField] private TMP_Text _scoreText;
 
     private int _playerScore = 40;
     private int _currentState = 0;
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore(int pointValue)
     {
         _playerScore += pointValue;
+        _scoreText.text = _playerScore.ToString();
     }
 
     public void DecreaseScore(int pointValue)
@@ -76,6 +79,7 @@ public class GameManager : MonoBehaviour
         }
 
         _playerScore -= pointValue;
+        _scoreText.text = _playerScore.ToString();
     }
 
     public void GameComplete()

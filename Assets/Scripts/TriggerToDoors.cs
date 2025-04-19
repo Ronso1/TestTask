@@ -8,6 +8,7 @@ public class TriggerToDoors : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClipWin;
     [SerializeField] private AudioClip _audioClipLose;
+    [SerializeField] private AudioClip _victoryClip;
     [SerializeField] private int _scoreNeeded;
     [SerializeField] private bool _finalDoor;
 
@@ -23,6 +24,7 @@ public class TriggerToDoors : MonoBehaviour
 
                 _gameManager.GameComplete();
                 _playerMove.enabled = false;
+                _audioSource.PlayOneShot(_victoryClip);
                 return;
             }
 
