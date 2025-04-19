@@ -4,6 +4,8 @@ using UnityEngine;
 public class ItemInteractLogic : MonoBehaviour
 {
     [SerializeField] private GameManager _gameManager;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
     [SerializeField] private bool _isGoodItem;
     [Space]
     [SerializeField] private int _score = 2;
@@ -27,5 +29,6 @@ public class ItemInteractLogic : MonoBehaviour
         {
             _gameManager.DecreaseScore(_score);
         }
+        _audioSource.PlayOneShot(_audioClip);
     }
 }
