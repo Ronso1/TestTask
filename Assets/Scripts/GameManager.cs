@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private int _playerScore = 0;
+    private int _playerScore = 40;
 
     public int PlayerScore => _playerScore;
 
@@ -21,5 +21,6 @@ public class GameManager : MonoBehaviour
         }
 
        _playerScore -= pointValue;
+        print(_playerScore);
     }
 }
