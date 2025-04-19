@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 810838390}
-  _angleToFlip: 120
+  _angleToFlip: 0
 --- !u!65 &344132893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 810838390}
-  _angleToFlip: 120
+  _angleToFlip: 90
 --- !u!65 &390235877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 810838390}
-  _angleToFlip: 120
+  _angleToFlip: 90
 --- !u!4 &201365637073410
 Transform:
   m_ObjectHideFlags: 0
