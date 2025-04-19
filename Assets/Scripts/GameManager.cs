@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameStart _gameStart;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private TMP_Text _scoreText;
+    [SerializeField] private GameObject _restartButton;
 
     private int _playerScore = 40;
     private int _currentState = 0;
@@ -85,10 +86,12 @@ public class GameManager : MonoBehaviour
     public void GameComplete()
     {
         _playerAnimator.SetTrigger("Win");
+        _restartButton.SetActive(true);
     }
 
     public void GameFailed()
     {
         _playerAnimator.SetTrigger("Fail");
+        _restartButton.SetActive(true);
     }
 }
