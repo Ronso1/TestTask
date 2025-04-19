@@ -5,13 +5,13 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float _forwardSpeed = 5f;
     [SerializeField] private float _boundaryLeft = -3f;
     [SerializeField] private float _boundaryRight = 3f;
+    [SerializeField] private float _rotateSpeed = 300f;
 
     private float _dragSensitivity = 0.01f;
     private bool _isDragging = false;
     private bool _isFlipping = false;
 
     private float _targetAngle;
-    private float _rotateSpeed = 300f;
     private bool _isRotating = false;
 
     private void Update()
@@ -20,7 +20,9 @@ public class PlayerMove : MonoBehaviour
         MoveForward();
 
         if (_isRotating)
+        {
             SmoothRotate();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -56,7 +58,6 @@ public class PlayerMove : MonoBehaviour
                     }
                     break;
 
-                case TouchPhase.Ended:
                 case TouchPhase.Canceled:
                     _isDragging = false;
                     break;
@@ -78,17 +79,6 @@ public class PlayerMove : MonoBehaviour
         _targetAngle = angle;
         _isRotating = true;
         _isFlipping = true;
-
-        if (Mathf.Approximately(angle % 360f, 0f))
-        {
-            _boundaryLeft = -3f;
-            _boundaryRight = 3f;
-        }
-        else if (Mathf.Approximately(angle % 360f, 90f))
-        {
-            _boundaryLeft = -3f;
-            _boundaryRight = 3f;
-        }
     }
 
     private void SmoothRotate()
