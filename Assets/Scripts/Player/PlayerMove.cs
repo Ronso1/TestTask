@@ -1,18 +1,24 @@
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private float _forwardSpeed = 5f;
-    [SerializeField] private float _boundaryLeft = -3f;
-    [SerializeField] private float _boundaryRight = 3f;
     [SerializeField] private float _rotateSpeed = 300f;
+    [SerializeField] private float _dragSensitivity = 0.01f;
 
-    private float _dragSensitivity = 0.01f;
+    private CharacterController _controller;
+
     private bool _isDragging = false;
     private bool _isFlipping = false;
 
     private float _targetAngle;
     private bool _isRotating = false;
+
+    private void Start()
+    {
+        _controller = GetComponent<CharacterController>();
+    }
 
     private void Update()
     {
@@ -51,13 +57,12 @@ public class PlayerMove : MonoBehaviour
                         Vector2 touchDelta = touch.deltaPosition;
                         float moveAmount = touchDelta.x * _dragSensitivity;
 
-                        Vector3 move = transform.right * moveAmount;
-                        Vector3 targetPosition = transform.position + move;
-
-                        transform.position = targetPosition;
+                        Vector3 lateralMove = transform.right * moveAmount;
+                        _controller.Move(lateralMove);
                     }
                     break;
 
+                case TouchPhase.Ended:
                 case TouchPhase.Canceled:
                     _isDragging = false;
                     break;
@@ -65,11 +70,10 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-
-
     private void MoveForward()
     {
-        transform.Translate(Vector3.forward * _forwardSpeed * Time.deltaTime);
+        Vector3 forwardMove = transform.forward * _forwardSpeed * Time.deltaTime;
+        _controller.Move(forwardMove);
     }
 
     public void RotatePlayer(float angle)
