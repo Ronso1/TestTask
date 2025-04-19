@@ -4451,8 +4451,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26099c8f60d2ee140a0b1e609f0cb1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerMove: {fileID: 810838390}
   _gameManager: {fileID: 1881385887}
   _doorsAnimator: {fileID: 1122360827}
+  _audioSource: {fileID: 1275756278}
+  _audioClipWin: {fileID: 8300000, guid: 6571e582d00f6f74f84bdc83516222c2, type: 3}
+  _audioClipLose: {fileID: 8300000, guid: 164908c75f6fb5a4383428e742d9d4b6, type: 3}
   _scoreNeeded: 100
 --- !u!65 &557061605
 BoxCollider:
@@ -6534,6 +6538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flagAnimator: {fileID: 1243926652}
+  _audioSource: {fileID: 1275756278}
+  _audioClip: {fileID: 8300000, guid: 7f1f1e705ebab5f4dbd20f6dcb3f39e8, type: 3}
 --- !u!65 &911695747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7786,8 +7792,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26099c8f60d2ee140a0b1e609f0cb1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerMove: {fileID: 810838390}
   _gameManager: {fileID: 1881385887}
   _doorsAnimator: {fileID: 894861473}
+  _audioSource: {fileID: 1275756278}
+  _audioClipWin: {fileID: 8300000, guid: aa00537ed3fef2a41a68cb8d0e0fffe2, type: 3}
+  _audioClipLose: {fileID: 8300000, guid: 164908c75f6fb5a4383428e742d9d4b6, type: 3}
   _scoreNeeded: 60
 --- !u!65 &1176423777
 BoxCollider:
@@ -10571,8 +10581,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26099c8f60d2ee140a0b1e609f0cb1a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerMove: {fileID: 810838390}
   _gameManager: {fileID: 1881385887}
   _doorsAnimator: {fileID: 790535026}
+  _audioSource: {fileID: 1275756278}
+  _audioClipWin: {fileID: 8300000, guid: 310bb8edaeb682446b6d64fb5192ea68, type: 3}
+  _audioClipLose: {fileID: 8300000, guid: 164908c75f6fb5a4383428e742d9d4b6, type: 3}
   _scoreNeeded: 40
 --- !u!1 &1497976668
 GameObject:
@@ -12774,6 +12788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flagAnimator: {fileID: 1410971421}
+  _audioSource: {fileID: 1275756278}
+  _audioClip: {fileID: 8300000, guid: 7f1f1e705ebab5f4dbd20f6dcb3f39e8, type: 3}
 --- !u!65 &1870634406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14503,6 +14519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flagAnimator: {fileID: 356304670}
+  _audioSource: {fileID: 1275756278}
+  _audioClip: {fileID: 8300000, guid: 7f1f1e705ebab5f4dbd20f6dcb3f39e8, type: 3}
 --- !u!1 &2081752811
 GameObject:
   m_ObjectHideFlags: 0
