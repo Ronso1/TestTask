@@ -1247,6 +1247,7 @@ GameObject:
   - component: {fileID: 236787324}
   - component: {fileID: 236787323}
   - component: {fileID: 236787322}
+  - component: {fileID: 236787327}
   m_Layer: 0
   m_Name: bottle (6)
   m_TagString: Untagged
@@ -1358,6 +1359,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &236787327
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236787321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &237475399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1642,7 @@ GameObject:
   - component: {fileID: 250429881}
   - component: {fileID: 250429880}
   - component: {fileID: 250429879}
+  - component: {fileID: 250429884}
   m_Layer: 0
   m_Name: bottle (5)
   m_TagString: Untagged
@@ -1730,6 +1754,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &250429884
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250429878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &261235301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,6 +2239,7 @@ GameObject:
   - component: {fileID: 369722516}
   - component: {fileID: 369722515}
   - component: {fileID: 369722514}
+  - component: {fileID: 369722519}
   m_Layer: 0
   m_Name: bottle (11)
   m_TagString: Untagged
@@ -2304,6 +2351,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &369722519
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369722513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &390235875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,6 +2634,7 @@ GameObject:
   - component: {fileID: 407193453}
   - component: {fileID: 407193452}
   - component: {fileID: 407193451}
+  - component: {fileID: 407193456}
   m_Layer: 0
   m_Name: bottle (13)
   m_TagString: Untagged
@@ -2676,6 +2746,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &407193456
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407193450}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,6 +3049,7 @@ GameObject:
   - component: {fileID: 468037343}
   - component: {fileID: 468037342}
   - component: {fileID: 468037341}
+  - component: {fileID: 468037346}
   m_Layer: 0
   m_Name: bottle (9)
   m_TagString: Untagged
@@ -3068,6 +3161,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &468037346
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468037340}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &479022281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,6 +3729,7 @@ GameObject:
   - component: {fileID: 607793260}
   - component: {fileID: 607793259}
   - component: {fileID: 607793258}
+  - component: {fileID: 607793263}
   m_Layer: 0
   m_Name: bottle (8)
   m_TagString: Untagged
@@ -3725,6 +3841,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &607793263
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607793257}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &617884762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3738,6 +3876,7 @@ GameObject:
   - component: {fileID: 617884765}
   - component: {fileID: 617884764}
   - component: {fileID: 617884763}
+  - component: {fileID: 617884768}
   m_Layer: 0
   m_Name: bottle (12)
   m_TagString: Untagged
@@ -3849,6 +3988,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &617884768
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617884762}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &617993540
 GameObject:
   m_ObjectHideFlags: 0
@@ -7522,6 +7683,7 @@ GameObject:
   - component: {fileID: 1401478486}
   - component: {fileID: 1401478485}
   - component: {fileID: 1401478484}
+  - component: {fileID: 1401478489}
   m_Layer: 0
   m_Name: bottle (2)
   m_TagString: Untagged
@@ -7633,6 +7795,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1401478489
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401478483}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1447004240
 GameObject:
   m_ObjectHideFlags: 0
@@ -7646,6 +7830,7 @@ GameObject:
   - component: {fileID: 1447004243}
   - component: {fileID: 1447004242}
   - component: {fileID: 1447004241}
+  - component: {fileID: 1447004246}
   m_Layer: 0
   m_Name: bottle (7)
   m_TagString: Untagged
@@ -7757,6 +7942,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1447004246
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447004240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1454728364
 GameObject:
   m_ObjectHideFlags: 0
@@ -8064,6 +8271,7 @@ GameObject:
   - component: {fileID: 1497976671}
   - component: {fileID: 1497976670}
   - component: {fileID: 1497976669}
+  - component: {fileID: 1497976674}
   m_Layer: 0
   m_Name: bottle (1)
   m_TagString: Untagged
@@ -8175,6 +8383,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1497976674
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497976668}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1517066854
 GameObject:
   m_ObjectHideFlags: 0
@@ -8188,6 +8418,7 @@ GameObject:
   - component: {fileID: 1517066857}
   - component: {fileID: 1517066856}
   - component: {fileID: 1517066855}
+  - component: {fileID: 1517066860}
   m_Layer: 0
   m_Name: bottle (14)
   m_TagString: Untagged
@@ -8299,6 +8530,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1517066860
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517066854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1553542799
 GameObject:
   m_ObjectHideFlags: 0
@@ -9125,6 +9378,7 @@ GameObject:
   - component: {fileID: 1685460430}
   - component: {fileID: 1685460429}
   - component: {fileID: 1685460428}
+  - component: {fileID: 1685460433}
   m_Layer: 0
   m_Name: bottle (4)
   m_TagString: Untagged
@@ -9236,6 +9490,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1685460433
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685460427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1704301429
 GameObject:
   m_ObjectHideFlags: 0
@@ -9396,6 +9672,7 @@ GameObject:
   - component: {fileID: 1705320413}
   - component: {fileID: 1705320412}
   - component: {fileID: 1705320411}
+  - component: {fileID: 1705320416}
   m_Layer: 0
   m_Name: bottle (3)
   m_TagString: Untagged
@@ -9507,6 +9784,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1705320416
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705320410}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1734759546
 GameObject:
   m_ObjectHideFlags: 0
@@ -11383,6 +11682,7 @@ GameObject:
   - component: {fileID: 2098914044}
   - component: {fileID: 2098914043}
   - component: {fileID: 2098914042}
+  - component: {fileID: 2098914047}
   m_Layer: 0
   m_Name: bottle (10)
   m_TagString: Untagged
@@ -11494,6 +11794,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1756665182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2098914047
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098914041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2125210636
 GameObject:
   m_ObjectHideFlags: 0
@@ -11869,6 +12191,7 @@ GameObject:
   - component: {fileID: 7315330320095197976}
   - component: {fileID: 9116897919633758926}
   - component: {fileID: 9116897919633758927}
+  - component: {fileID: 9116897919633758928}
   m_Layer: 0
   m_Name: bottle
   m_TagString: Untagged
@@ -11912,6 +12235,28 @@ MonoBehaviour:
   _gameManager: {fileID: 1881385887}
   _isGoodItem: 0
   _score: 20
+--- !u!95 &9116897919633758928
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9116897919633758925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95f921f1f4826684fac762c329e63087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &9184712364281280043
 PrefabInstance:
   m_ObjectHideFlags: 0
